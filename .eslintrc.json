@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/babel"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

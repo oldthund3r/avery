@@ -1,0 +1,121 @@
+
+:root {
+  --primary-grey: #4F4F4F;
+  --secondary-grey: #c1bbbb;
+  --tertiary-grey: #F1F1F1;
+  --primary-white: #FFFFFF;
+  --gutter: 15px;
+  --equal-gutter: 15px;
+  --double-equal-gutter: 30px;
+  --spacer-1: 1rem;
+  --spacer-2: 2rem;
+  --spacer-3: 3rem;
+  --spacer-4: 4rem;
+  --spacer-5: 5rem;
+  --spacer-6: 6rem;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-grey);
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+p, span, div {
+  color: var(--secondary-grey);
+}
+
+button, a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+button {
+  background-color: var(--primary-grey);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 5px 15px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #9E9E9E;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.ellipsis-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.padded {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.equal-gutter-grid > [class*='col'] {
+  padding-left: var(--equal-gutter);
+  padding-right: var(--equal-gutter);
+  margin-bottom: var(--double-equal-gutter);
+}
+
+.no-highlight {
+  user-select: none;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.link-like {
+  cursor: pointer;
+  user-select: none;
+}
+
+.link-like:focus {
+  outline: 0;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: unset;
+}
+
+.link-reset:hover {
+  color: inherit;
+  text-decoration: inherit;
+}

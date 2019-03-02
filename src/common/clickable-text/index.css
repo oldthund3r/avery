@@ -1,0 +1,13 @@
+.clickable-text {
+  cursor: pointer;
+  text-decoration: underline;
+  user-select: none;
+}
+
+.clickable-text:focus {
+  outline: 0;
+}
+
+.clickable-text:hover {
+  color: blue;
+}
